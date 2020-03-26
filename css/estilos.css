@@ -1,45 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
+    font-family: 'open sans';
     background: rgb(250,250,250);
 }
 
-h1{
-    display: inline-block;
-    position: relative;
-    top: 5%;
-    left: 38%;
-    font-family: sans-serif;
+.contenedor{
+  padding: 60px 0; /* espacio entre secciones */
+  width: 90%;
+  max-width: 1000px; /* */
+  margin: auto; /* centrar todo */
+  overflow: hidden; /* si algo e sale del contendor se esconde */
 }
 
-.menu {
-    background: rgb(217, 217, 217);
-    margin:0;
-    list-style-type: none;
+.titulo{
+  color: #642a73;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+
 }
 
-.menu li{
-    display: inline-block;
-    padding: 15px 150px 15px 15px;
-    margin-left: auto;
-    margin-right: auto;
+header{
+  width: 100%;
+  height: 600px;
+  background: hsla(261, 45%, 57%, 0.7);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, 	hsla(161, 61%, 46%, 0.7), 	hsla(261, 45%, 57%, 0.7));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, 	hsla(161, 61%, 46%, 0.7), hsla(261, 45%, 57%, 0.7)), url(../imagenes/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
 
-.menu li a{
-    color: rgb(0,0,0);
-    text-decoration: none;
-}
-.menu li a:hover{
-    text-decoration: underline;
+nav{
+  text-align: right;
+  padding: 30px 50px 0px 0px;
 }
 
-.profile{
-    position: relative;
-    left: -40%;
+nav > a{
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right:10px;
 }
 
+nav > a{
+  color: #fff;
+  font-weight: 300;
+  text-decoration: underline;
+  margin-right:10px;
+}
 
-.info {
-    position: relative;
-    display: block;
-    top: 10%;
-    left: 43%;
+header .texto-header{
+  display: flex; /*flex box*/
+  height: 430px;
+  width: 100%;
+  align-items: center; /*centrar los elementos*/
+  justify-content: center; /*??*/
+
 }
